@@ -99,7 +99,7 @@ def tutorial_detail(request, pk):
                             status=status.HTTP_204_NO_CONTENT)
 
 
-@api_view(['GET'])
+@api_view(['GET']) 
 def tutorial_list_published(request):
     tutorials = Tutorial.objects.filter(published=True)
 
